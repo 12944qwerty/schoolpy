@@ -1,8 +1,7 @@
 from setuptools import setup
-
 import re
 
-with open('color_palette/__init__.py') as f:
+with open('schoolpy/__init__.py') as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 
 requirements = []
@@ -34,6 +33,6 @@ setup(name="schoolpy",
           "Programming Language :: Python :: 3.7",
           "Programming Language :: Python :: 3.8",
           "Topic :: Education",
-		  "Topic :: Education :: Computer Aided Instruction (CAI)"
+          "Topic :: Education :: Computer Aided Instruction (CAI)"
         ],
 )
